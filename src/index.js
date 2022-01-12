@@ -24,7 +24,7 @@ const server = http.createServer((request, response) => {
   );
 
   if (route) {
-    const requestsWithBody = ["POST", "PUT"];
+    const requestsWithBody = ["POST", "PUT", "PATCH"];
     request.query = Object.fromEntries(parsedUrl.searchParams);
     request.params = { id };
 
